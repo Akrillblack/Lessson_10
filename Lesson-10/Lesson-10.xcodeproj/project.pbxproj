@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		43ECE5A828FF030100529310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5A728FF030100529310 /* AppDelegate.swift */; };
-		43ECE5AA28FF030100529310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5A928FF030100529310 /* SceneDelegate.swift */; };
 		43ECE5AC28FF030100529310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5AB28FF030100529310 /* ViewController.swift */; };
 		43ECE5AF28FF030100529310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43ECE5AD28FF030100529310 /* Main.storyboard */; };
 		43ECE5B128FF030200529310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43ECE5B028FF030200529310 /* Assets.xcassets */; };
 		43ECE5B428FF030200529310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43ECE5B228FF030200529310 /* LaunchScreen.storyboard */; };
+		43ECE5BD28FF0D7A00529310 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5BC28FF0D7A00529310 /* SecondViewController.swift */; };
+		43ECE5BF28FF1BA800529310 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5BE28FF1BA800529310 /* GreenViewController.swift */; };
+		43ECE5C128FF1BBB00529310 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5C028FF1BBB00529310 /* BlueViewController.swift */; };
+		43ECE5C328FF1BCD00529310 /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5C228FF1BCD00529310 /* PurpleViewController.swift */; };
+		43ECE5C528FF1BDB00529310 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECE5C428FF1BDB00529310 /* PinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43ECE5A428FF030100529310 /* Lesson-10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson-10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ECE5A728FF030100529310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43ECE5A928FF030100529310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43ECE5AB28FF030100529310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43ECE5AE28FF030100529310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43ECE5B028FF030200529310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43ECE5B328FF030200529310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43ECE5B528FF030200529310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ECE5BC28FF0D7A00529310 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		43ECE5BE28FF1BA800529310 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		43ECE5C028FF1BBB00529310 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		43ECE5C228FF1BCD00529310 /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
+		43ECE5C428FF1BDB00529310 /* PinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		43ECE5A628FF030100529310 /* Lesson-10 */ = {
 			isa = PBXGroup;
 			children = (
+				43ECE5BB28FF0D2000529310 /* Controllers */,
 				43ECE5A728FF030100529310 /* AppDelegate.swift */,
-				43ECE5A928FF030100529310 /* SceneDelegate.swift */,
-				43ECE5AB28FF030100529310 /* ViewController.swift */,
 				43ECE5AD28FF030100529310 /* Main.storyboard */,
 				43ECE5B028FF030200529310 /* Assets.xcassets */,
 				43ECE5B228FF030200529310 /* LaunchScreen.storyboard */,
 				43ECE5B528FF030200529310 /* Info.plist */,
 			);
 			path = "Lesson-10";
+			sourceTree = "<group>";
+		};
+		43ECE5BB28FF0D2000529310 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43ECE5AB28FF030100529310 /* ViewController.swift */,
+				43ECE5BC28FF0D7A00529310 /* SecondViewController.swift */,
+				43ECE5BE28FF1BA800529310 /* GreenViewController.swift */,
+				43ECE5C028FF1BBB00529310 /* BlueViewController.swift */,
+				43ECE5C228FF1BCD00529310 /* PurpleViewController.swift */,
+				43ECE5C428FF1BDB00529310 /* PinkViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43ECE5BF28FF1BA800529310 /* GreenViewController.swift in Sources */,
+				43ECE5BD28FF0D7A00529310 /* SecondViewController.swift in Sources */,
+				43ECE5C328FF1BCD00529310 /* PurpleViewController.swift in Sources */,
 				43ECE5AC28FF030100529310 /* ViewController.swift in Sources */,
+				43ECE5C528FF1BDB00529310 /* PinkViewController.swift in Sources */,
+				43ECE5C128FF1BBB00529310 /* BlueViewController.swift in Sources */,
 				43ECE5A828FF030100529310 /* AppDelegate.swift in Sources */,
-				43ECE5AA28FF030100529310 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +356,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

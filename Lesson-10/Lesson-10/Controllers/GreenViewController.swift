@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GreenViewController.swift
 //  Lesson-10
 //
 //  Created by Donatas on 18.10.22.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
 }
-
