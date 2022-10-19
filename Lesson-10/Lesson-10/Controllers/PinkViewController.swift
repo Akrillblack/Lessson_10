@@ -9,10 +9,16 @@ import UIKit
 
 class PinkViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    var text = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.textLabel.text = self.text
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {

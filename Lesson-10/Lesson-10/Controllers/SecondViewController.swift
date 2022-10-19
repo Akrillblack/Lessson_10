@@ -10,21 +10,23 @@ import UIKit
 class SecondViewController: UIViewController {
     
     var text = ""
-
-    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.textField.text = text
+        self.nextButton.center = self.view.center
     }
     
     @IBAction func backButtonPresseed(_ sender: UIButton) {
         self.dismiss(animated: true)
+    }
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        let controller =  self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
+        controller.modalPresentationStyle = .fullScreen
+        controller.text = self.text
+        self.present(controller, animated: true)
     }
     
 }

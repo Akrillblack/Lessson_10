@@ -9,14 +9,25 @@ import UIKit
 
 class BlueViewController: UIViewController {
 
+    var text = ""
+
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.nextButton.center = self.view.center
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        let controller =  self.storyboard?.instantiateViewController(withIdentifier: "PurpleViewController") as! PurpleViewController
+        controller.modalPresentationStyle = .fullScreen
+        controller.text = self.text
+        self.present(controller, animated: true)
+    }
+    
     
 }
